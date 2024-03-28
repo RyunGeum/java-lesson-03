@@ -14,7 +14,7 @@ public class SimpleArray {
         boolean isMatched = true;
         for (int i = 0; i < 10; i++) {
             if (arrays[i] != answer[i]) {
-                System.out.printf("값이 일차하지 않습니다. (인덱스 %d)\n", i);
+                System.out.printf("값이 일치하지 않습니다. (인덱스 %d)\n", i);
                 isMatched = false;
             }
         }
@@ -34,6 +34,6 @@ public class SimpleArray {
      * * ^2는 제곱의 의미로 사용되었습니다.
      */
     private static void fillArray(int index) {
-        throw new RuntimeException("이 코드 라인을 지우고, 이곳에서 작성하십시오.");
+        arrays[index] = (int) Math.pow((index * 7 / 5),2);
     }
 }
